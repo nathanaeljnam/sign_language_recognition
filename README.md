@@ -2,9 +2,17 @@
 
 A real-time sign language recognition system that uses hand pose detection and Graph Neural Networks (GNNs) to classify signs from the American Sign Language (ASL) alphabet (**A–Z**) and digits (**0–9**).
 
-<!-- ![Sign Language Example](https://user-images.githubusercontent.com/your-placeholder/example.gif) Optional: add demo gif/image -->
 
 ---
+
+
+## 📸 Demo
+
+<!-- ![Sign Language Example](https://user-images.githubusercontent.com/your-placeholder/example.gif) Optional: add demo gif/image -->
+
+
+---
+
 
 ## 📌 Features
 
@@ -14,7 +22,9 @@ A real-time sign language recognition system that uses hand pose detection and G
 - 🔢 Supports digits 0–9
 - 🎥 Live webcam detection
 
+
 ---
+
 
 ## 🛠️ Requirements
 
@@ -24,7 +34,9 @@ Install dependencies using pip:
 pip install -r requirements.txt
 ```
 
+
 ---
+
 
 ## 🚀 Getting Started
 
@@ -50,7 +62,9 @@ python main_numbers.py
 Make sure your webcam is enabled.
 Press Q to quit the app.
 
+
 ---
+
 
 ## 📂 Project Structure
 
@@ -85,9 +99,4 @@ sign-language-recognition/
 └── requirements.txt
 
 ```
-
----
-
-## 📸 Demo
-
 
