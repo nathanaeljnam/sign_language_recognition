@@ -54,20 +54,37 @@ Press Q to quit the app.
 
 ## 📂 Project Structure
 
+```
 sign-language-recognition/
-│
-├── main_alphabet.py               # Real-time alphabet recognition script
-├── main_numbers.py                # Real-time numbers recognition script
-│
-├── models/
-│   └── model_alphabet.py          # GNN model definition
+
+├── alphabet_dataset/
+│   └── datasets.npy
 │
 ├── model_weights/
-│   └── model_alphabet_10_epochs.pth  # Trained model weights
+│   └── model_weights/model_alphabet_10_epochs.pth
+│   └── model_weights/model_numbers_10_epochs.pth
+│   └── model_weights/model_numbers_20_epochs.pth
 │
-├── utils/                         # (Optional) Helper scripts/functions
+├── models/
+│   └── models/model_alphabet_train.py
+│   └── models/model_alphabet.py
+│   └── models/model_number.py
+│   └── models/model_numbers_train.py
 │
-└── README.md                      # This file!
+├── number_dataset/
+│   └── datasets.npy
+│
+├── .gitignore
+│
+└── README.md
+│
+├── main_alphabet.py
+│
+├── main_numbers.py
+│
+└── requirements.txt
+
+```
 
 ---
 
