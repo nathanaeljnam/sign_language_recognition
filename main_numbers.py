@@ -1,4 +1,4 @@
-from model_number import HandPoseGNN
+from models.model_number import NumbersGNN
 import cv2
 import mediapipe as mp
 import numpy as np
@@ -7,8 +7,8 @@ import torch
 
 
 
-model = HandPoseGNN(10)  
-model.load_state_dict(torch.load('models/model_numbers_20_epochs.pth'))
+model = NumbersGNN(10)  
+model.load_state_dict(torch.load('model_weights/model_numbers_20_epochs.pth'))
 model.eval()
 
 

@@ -3,11 +3,11 @@ import mediapipe as mp
 import numpy as np
 from torch_geometric.data import Data
 import torch
-from model_alphabet import EnhancedHandPoseGNN
+from models.model_alphabet import AlphabetGNN
 
 
 
-model = EnhancedHandPoseGNN() 
+model = AlphabetGNN() 
 
 mapping = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
@@ -17,7 +17,7 @@ edge_list = [(0,1), (1,2), (2,3), (3,4), (0,5), (5,6), (6,7), (7,8), (0,9), (9,1
 edge_index = torch.tensor(edge_list, dtype=torch.long).t().contiguous()
     
 # Assuming you have loaded the state dict from the saved model
-state_dict = torch.load('models/model_alphabet_10_epochs.pth')
+state_dict = torch.load('model_weights/model_alphabet_10_epochs.pth')
 
 
 model.load_state_dict(state_dict)
