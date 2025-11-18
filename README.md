@@ -8,9 +8,8 @@ A real-time sign language recognition system that uses hand pose detection and G
 
 ## 📸 Demo
 
-<!-- ![Sign Language Example](https://user-images.githubusercontent.com/your-placeholder/example.gif) Optional: add demo gif/image -->
 
-
+<video src="demo/sign_language_alphabet_demo.mov" width="320" height="240" controls></video>
 ---
 
 
